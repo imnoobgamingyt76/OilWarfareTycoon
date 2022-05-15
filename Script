@@ -1,0 +1,33 @@
+if game.PlaceId == 4639625707 then
+    local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+    local Window = Library.CreateLib("Some random Bs gui", "Sentinel")
+
+
+    --MAIN
+    local Main = Window:NewTab("Main")
+    local MainSection = Main:NewSection("Main")
+    MainSection:NewButton("Tp to point", "Teleports you into the point", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-149, 70, 664)
+    end) 
+    MainSection:NewButton("Tp to point", "Teleports you into the Sniper Building thing", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-185, 145, 657)
+    end)
+    MainSection:NewButton("Tp to point", "Teleports you into the Safe Building", function()
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-455, 134, 620)
+    end)
+    
+
+   
+
+    
+
+    --PLAYER
+    local Player = Window:NewTab("Player")
+    local PlayerSection = Player:NewSection("Player")
+    PlayerSection:NewSlider("WalkSpeed", "Changes The walkspeed because pro", 500, 0, function(v)
+        game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = v
+    end)
+    PlayerSection:NewSlider("JumpPower", "Changes The JumpPower because pro", 500, 0, function(v) 
+        game.Players.LocalPlayer.Character.Humanoid.JumpPower = v
+    end)
+end
