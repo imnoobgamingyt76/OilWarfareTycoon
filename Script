@@ -9,10 +9,10 @@ if game.PlaceId == 4639625707 then
     MainSection:NewButton("Tp to point", "Teleports you into the point", function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-149, 70, 664)
     end) 
-    MainSection:NewButton("Tp to point", "Teleports you into the Sniper Building thing", function()
+    MainSection:NewButton("Tp to Building", "Teleports you into the Sniper Building thing", function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-185, 145, 657)
     end)
-    MainSection:NewButton("Tp to point", "Teleports you into the Safe Building", function()
+    MainSection:NewButton("Tp to Building", "Teleports you into the Safe Building", function()
         game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-455, 134, 620)
     end)
     
