@@ -18,10 +18,7 @@ if game.PlaceId == 4639625707 then
     
 
    
-
-    
-
-    --PLAYER
+   --PLAYER
     local Player = Window:NewTab("Player")
     local PlayerSection = Player:NewSection("Player")
     PlayerSection:NewSlider("WalkSpeed", "Changes The walkspeed because pro", 500, 0, function(v)
